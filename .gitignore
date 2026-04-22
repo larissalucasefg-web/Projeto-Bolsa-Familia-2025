@@ -1,0 +1,29 @@
+# --- Dados e Arquivos Pesados ---
+# Ignora a pasta de dados e qualquer arquivo CSV (essencial para Big Data)
+dados/
+*.csv
+
+# --- Ambiente Virtual ---
+# Ignora a pasta venv para não subir bibliotecas instaladas ao GitHub
+venv/
+env/
+.env
+
+# --- Python & Spark ---
+# Ignora pastas de cache de compilação do Python
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignora logs e arquivos temporários do Spark/Hadoop
+derby.log
+metastore_db/
+spark-warehouse/
+
+# --- Notebooks ---
+# Ignora o checkpoint dos notebooks Jupyter
+.ipynb_checkpoints/
+
+
+# --- Arquivo Específico 
+
