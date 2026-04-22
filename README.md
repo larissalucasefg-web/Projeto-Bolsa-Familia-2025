@@ -1,4 +1,4 @@
-git<div align="center">
+<div align="center">
   <img src="https://i.imgur.com/c50SjWw.png" width="100px" alt="Logo ou Avatar" />
   <h1>Grupo 3</h1>
   <p>Bolsa Familia 2025</p>
