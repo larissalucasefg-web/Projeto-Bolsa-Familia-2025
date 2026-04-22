@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-
-<div align="center">
+g<div align="center">
   <img src="https://i.imgur.com/c50SjWw.png" width="100px" alt="Logo ou Avatar" />
   <h1>Grupo 3</h1>
   <p>Bolsa Familia 2025</p>
@@ -93,6 +91,4 @@ Análise de Políticas Públicas e Impacto Social
 Projeto desenvolvido por:
 Bruno, Leandro, Emmily, Larissa e Jhulyana
 
-=======
-# Projeto-Bolsa-Familia-2025
->>>>>>> 65da26e511f26bad530344ee09327c017f285750
+
