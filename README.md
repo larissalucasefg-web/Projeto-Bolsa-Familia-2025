@@ -69,6 +69,22 @@ O foco principal é a **comparação entre os cenários de 2021 e 2025**, mensur
   🌐 Plotly &nbsp;&nbsp;
   🧾 Pandas
 
+## 🛠️ Como Executar
+
+1. **Clone o repositório:**
+   `git clone https://github.com/larissalucasefg-web/Projeto-Bolsa-Familia-2025.git`
+
+2. **Instale as dependências:**
+   `pip install -r requirements.txt`
+
+3. **Pré-requisitos:**
+   Certifique-se de ter o **Java 17 ou superior** instalado (necessário para o PySpark).
+
+4. **Execução:**
+   - Para ver a análise interativa: abra o arquivo em `notebooks/`.
+   - Para rodar o pipeline via script: `python src/analises.py`.
+   - Para rodar o pipeline via script: `python src/analises.py`.
+
 ## 📋 Funcionalidades do Pipeline
 
 ### 1. ⚙️ Configuração Big Data
@@ -94,36 +110,44 @@ Enriquecimento: Extração de metadados temporais (Ano/Mês) para análises de t
 - Top 5 Estados por Investimento
 Ranking das Unidades Federativas com maior volume de repasses.
 
+## 🛠️ Como Executar e Visualizar os Gráficos
+Para reproduzir as análises e visualizar os resultados em sua máquina local, siga os passos abaixo:
+
+1. Pré-requisitos
+Como o projeto utiliza Apache Spark, é necessário ter instalado:
+
+Java 17 ou superior (com a variável JAVA_HOME configurada).
+Python 3.x.
+
+### 3. Gerando os Resultados
+Você pode interagir com o projeto de duas formas:
+
+Via Script (Automação): Para processar os dados e gerar os arquivos de imagem dos gráficos automaticamente na pasta notebooks/, execute:
+
+`python src/graficos.py`
+
+Via Jupyter Notebook (Exploração):
+Para uma visualização rica e detalhada, abra o arquivo notebooks/analise_exploratoria.ipynb. Lá, os gráficos são renderizados de forma interativa utilizando Plotly e Matplotlib.
+
 ## 📊 Gráficos Gerados
 
-![Gráfico](notebooks/salto_orcamentario.png)
-![Gráfico](notebooks/top_ufs_bolsa_familia.png)
-![Gráfico](notebooks/distribuicao_estado.png)
-![Gráfico](notebooks/comparativo_2021X2025.png)
+| Salto Orçamentário | Distribuição por Estado |
+| :---: | :---: |
+| ![Gráfico](notebooks/salto_orcamentario.png) | ![Gráfico](notebooks/distribuicao_estado.png) |
+| **Top UFs** | **Comparativo 2021x2025** |
+| ![Gráfico](notebooks/top_ufs_bolsa_familia.png) | ![Gráfico](notebooks/comparativo_2021X2025.png) |
 
 ### 📈 Exemplo de Resultado
 
 O projeto gera automaticamente o gráfico de Salto Orçamentário, que compara visualmente o faturamento total entre os anos analisados, utilizando setas indicativas e rótulos de porcentagem calculados em tempo real pelo script.
 
-
-
-(Nota: O gráfico acima é gerado automaticamente na pasta notebooks)
-
-
-
 ## 🎯 Finalidade
 
 Este repositório foi desenvolvido para fins de estudo e aplicação prática em:
 
-
-
 Engenharia de Dados com foco em Spark
 
-
-
 Análise de Políticas Públicas e Impacto Social
-
-
 
 ## 👩‍💻 Autores
 
