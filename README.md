@@ -1,29 +1,37 @@
 <div align="center">
-  <img src="https://i.imgur.com/c50SjWw.png" width="100px" alt="Logo ou Avatar" />
+
+<img src="https://i.imgur.com/znYF0MD.png" width="200px" 
+     style="border-radius: 50%; border: 3px solid #ccc;" />
+
   <h1>Grupo 3</h1>
+
   <p>Bolsa Familia 2025</p>
+
 </div>
 
 # 📊 Análise de Dados - Bolsa Família 2025 com PySpark
 
 ## 📌 O que é o Programa Bolsa Família?
+
 O **Bolsa Família** é o maior programa de transferência direta de renda do Brasil, focado em famílias em situação de vulnerabilidade. Em 2025, o programa consolidou um modelo de renda variável, onde o valor do benefício é ajustado conforme a composição familiar (nutrizes, gestantes, crianças e adolescentes), garantindo maior equidade e justiça social.
 
 ---
 
 ## 📝 Sobre o Projeto
+
 Este projeto utiliza o ecossistema **Apache Spark** para processar e analisar grandes volumes de dados (*Big Data*) provenientes do Portal da Transparência.  
 
 O foco principal é a **comparação entre os cenários de 2021 e 2025**, mensurando:
-- O impacto do salto orçamentário  
-- A eficiência da distribuição de renda nas diferentes regiões do país  
 
+- O impacto do salto orçamentário  
+
+- A eficiência da distribuição de renda nas diferentes regiões do país  
 ---
 
 ## 📁 Estrutura do Projeto
 
-
 📦 BOLSA FAMILIA 2025\
+
 ├── 📂 dados\
 │   └── 📄 NovoBolsaFamilia25.csv\
 ├── 📂 notebooks\
@@ -44,20 +52,31 @@ O foco principal é a **comparação entre os cenários de 2021 e 2025**, mensur
 ---
 
 ## 🚀 Tecnologias Utilizadas
-Python 3.x
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="50"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" width="50"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" width="50"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" width="50"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" width="50"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/plotly/plotly-original.svg" width="50"/>
+</p>
 
-PySpark (Spark SQL): Processamento distribuído em larga escala.
-
-Matplotlib & NumPy: Criação de gráficos com anotações dinâmicas.
-
-Pandas: Interface para renderização de plots estatísticos.
+<p align="center">
+  🐍 Python &nbsp;&nbsp;
+  ⚡ PySpark &nbsp;&nbsp;
+  🔢 NumPy &nbsp;&nbsp;
+  📊 Matplotlib &nbsp;&nbsp;
+  🌐 Plotly &nbsp;&nbsp;
+  🧾 Pandas
 
 ## 📋 Funcionalidades do Pipeline
 
 ### 1. ⚙️ Configuração Big Data
+
 O ambiente é otimizado para lidar com arquivos massivos utilizando uma SparkSession configurada com 8GB de RAM e ajuste de partições de shuffle para máxima performance de CPU.
 
 ### 2. 🔄 Processo de ETL (Extract, Transform, Load)
+
 Padronização: Renomeação de colunas complexas para o formato snake_case.
 
 Casting: Conversão de valores monetários brasileiros (ponto e vírgula) para o tipo Decimal(10,2).
@@ -65,26 +84,49 @@ Casting: Conversão de valores monetários brasileiros (ponto e vírgula) para o
 Enriquecimento: Extração de metadados temporais (Ano/Mês) para análises de tendência.
 
 ### 3. 📊 Insights Gerados
-Ticket Médio: Evolução do valor por família (R$ 190,67 em 2021 vs. R$ 671,27 em 2025).
 
-Salto Orçamentário: Identificação de um crescimento de +314% no investimento total.
+- Ticket Médio: Evolução do valor por família (R$ 190,67 em 2021 vs. R$ 671,27 em 2025).
 
-Equidade Social: Análise da amplitude de pagamentos, demonstrando que o novo modelo atende melhor famílias numerosas.
+- Salto Orçamentário: Identificação de um crescimento de +314% no investimento total.
+
+- Equidade Social: Análise da amplitude de pagamentos, demonstrando que o novo modelo atende melhor famílias numerosas.
+
+- Top 5 Estados por Investimento
+Ranking das Unidades Federativas com maior volume de repasses.
+
+## 📊 Gráficos Gerados
+
+![Gráfico](notebooks/salto_orcamentario.png)
+![Gráfico](notebooks/top_ufs_bolsa_familia.png)
+![Gráfico](notebooks/distribuicao_estado.png)
+![Gráfico](notebooks/comparativo_2021X2025.png)
 
 ### 📈 Exemplo de Resultado
+
 O projeto gera automaticamente o gráfico de Salto Orçamentário, que compara visualmente o faturamento total entre os anos analisados, utilizando setas indicativas e rótulos de porcentagem calculados em tempo real pelo script.
+
+
 
 (Nota: O gráfico acima é gerado automaticamente na pasta notebooks)
 
+
+
 ## 🎯 Finalidade
+
 Este repositório foi desenvolvido para fins de estudo e aplicação prática em:
+
+
 
 Engenharia de Dados com foco em Spark
 
+
+
 Análise de Políticas Públicas e Impacto Social
 
+
+
 ## 👩‍💻 Autores
+
 Projeto desenvolvido por:
+
 Bruno, Leandro, Emmily, Larissa e Jhulyana
-
-
