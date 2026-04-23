@@ -75,9 +75,9 @@ def executar_analises():
 
     # --- CÁLCULO DE AMPLITUDE ---
     print("\n" + "="*50)
-    amplitude_25 = float(resumo_row['valor_maximo'] - resumo_row['valor_minimo'])
-    print(f" ANÁLISE DE EQUIDADE 2025 ")
-    print(f" Amplitude (Maior vs Menor): R$ {amplitude_25:,.2f}".replace(',', 'X').replace('.', ',').replace('X', '.'))
+    amplitude_26 = float(resumo_row['valor_maximo'] - resumo_row['valor_minimo'])
+    print(f" ANÁLISE DE EQUIDADE 2026 ")
+    print(f" Amplitude (Maior vs Menor): R$ {amplitude_26:,.2f}".replace(',', 'X').replace('.', ',').replace('X', '.'))
     print("="*50 + "\n")
     
     spark.stop()

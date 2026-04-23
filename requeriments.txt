@@ -1,5 +1,6 @@
 pyspark
 pandas
 matplotlib
+plotly
 ipykernel
 jupyter

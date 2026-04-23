@@ -1,19 +1,15 @@
 <div align="center">
-
-<img src="https://i.imgur.com/znYF0MD.png" width="200px" 
-     style="border-radius: 50%; border: 3px solid #ccc;" />
-
-  <h1>Grupo 3</h1>
-
-  <p>Bolsa Familia 2025</p>
+<img src="https://i.imgur.com/znYF0MD.png" width="300px" align="center"/>
+  <h1>Grupo 4</h1>
+  <p>Bolsa Familia 2026</p>
 
 </div>
 
-# 📊 Análise de Dados - Bolsa Família 2025 com PySpark
+# 📊 Análise de Dados - Bolsa Família 2026 com PySpark
 
 ## 📌 O que é o Programa Bolsa Família?
 
-O **Bolsa Família** é o maior programa de transferência direta de renda do Brasil, focado em famílias em situação de vulnerabilidade. Em 2025, o programa consolidou um modelo de renda variável, onde o valor do benefício é ajustado conforme a composição familiar (nutrizes, gestantes, crianças e adolescentes), garantindo maior equidade e justiça social.
+O **Bolsa Família** é o maior programa de transferência direta de renda do Brasil, focado em famílias em situação de vulnerabilidade. Em 2026, o programa consolidou um modelo de renda variável, onde o valor do benefício é ajustado conforme a composição familiar (nutrizes, gestantes, crianças e adolescentes), garantindo maior equidade e justiça social.
 
 ---
 
@@ -21,7 +17,7 @@ O **Bolsa Família** é o maior programa de transferência direta de renda do Br
 
 Este projeto utiliza o ecossistema **Apache Spark** para processar e analisar grandes volumes de dados (*Big Data*) provenientes do Portal da Transparência.  
 
-O foco principal é a **comparação entre os cenários de 2021 e 2025**, mensurando:
+O foco principal é a **comparação entre os cenários de 2021 e 2026**, mensurando:
 
 - O impacto do salto orçamentário  
 
@@ -33,9 +29,10 @@ O foco principal é a **comparação entre os cenários de 2021 e 2025**, mensur
 📦 BOLSA FAMILIA 2025\
 
 ├── 📂 dados\
-│   └── 📄 NovoBolsaFamilia25.csv\
+│   └── 📄 NovoBolsaFamilia26.csv\
 ├── 📂 notebooks\
 │   ├── 📄 analise_exploratoria.ipynb\
+│   ├── 🖼️ distribuicao_estado.png\
 │   ├── 🖼️ comparativo_2021X2025.png\
 │   ├── 🖼️ salto_orcamentario.png\
 │   └── 🖼️ top_ufs_bolsa_familia.png\
@@ -101,9 +98,9 @@ Enriquecimento: Extração de metadados temporais (Ano/Mês) para análises de t
 
 ### 3. 📊 Insights Gerados
 
-- Ticket Médio: Evolução do valor por família (R$ 190,67 em 2021 vs. R$ 671,27 em 2025).
+- Ticket Médio: Evolução do valor por família (R$ 190,67 em 2021 vs. R$ 667.33 em 2026).
 
-- Salto Orçamentário: Identificação de um crescimento de +314% no investimento total.
+- Salto Orçamentário: Identificação de um crescimento de +279.3% no investimento total.
 
 - Equidade Social: Análise da amplitude de pagamentos, demonstrando que o novo modelo atende melhor famílias numerosas.
 
@@ -116,8 +113,8 @@ Para reproduzir as análises e visualizar os resultados em sua máquina local, s
 1. Pré-requisitos
 Como o projeto utiliza Apache Spark, é necessário ter instalado:
 
-Java 17 ou superior (com a variável JAVA_HOME configurada).
-Python 3.x.
+- Java 17 ou superior (com a variável JAVA_HOME configurada).
+- Python 3.x.
 
 ### 3. Gerando os Resultados
 Você pode interagir com o projeto de duas formas:
@@ -135,7 +132,7 @@ Para uma visualização rica e detalhada, abra o arquivo notebooks/analise_explo
 | :---: | :---: |
 | ![Gráfico](notebooks/salto_orcamentario.png) | ![Gráfico](notebooks/distribuicao_estado.png) |
 | **Top UFs** | **Comparativo 2021x2025** |
-| ![Gráfico](notebooks/top_ufs_bolsa_familia.png) | ![Gráfico](notebooks/comparativo_2021X2025.png) |
+| ![Gráfico](notebooks/top_ufs_bolsa_familia.png) | ![Gráfico](notebooks/comparativo_2021X2026.png) |
 
 ### 📈 Exemplo de Resultado
 

@@ -28,7 +28,7 @@ def gerar_graficos():
     df_bruto = carregar_dataframe(spark)
     df_tratado = tratar_dados(df_bruto)
     
-    # Dados de 2025 para cálculos
+    # Dados de 2026 para cálculos
     resumo_df = df_tratado.agg(
         sum("valor_parcela").alias("total_pago"),
         avg("valor_parcela").alias("media_pagamento"),

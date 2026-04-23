@@ -2,13 +2,13 @@ from pyspark.sql import SparkSession
 
 def iniciar_spark():
     return SparkSession.builder \
-        .appName("Bolsa Familia 2025") \
+        .appName("Bolsa Familia 2026") \
         .config("spark.driver.memory", "8g") \
         .config("spark.executor.memory", "8g") \
         .config("spark.sql.shuffle.partitions", "50") \
         .getOrCreate() 
 
-def carregar_dataframe(spark, caminho_csv="dados/NovoBolsaFamilia25.csv"):
+def carregar_dataframe(spark, caminho_csv="dados/NovoBolsaFamilia26.csv"):
     df = spark.read \
         .option("header", True) \
         .option("inferSchema", True) \
