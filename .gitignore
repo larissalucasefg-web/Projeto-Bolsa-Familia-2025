@@ -23,7 +23,5 @@ spark-warehouse/
 # --- Notebooks ---
 # Ignora o checkpoint dos notebooks Jupyter
 .ipynb_checkpoints/
-
-
-# --- Arquivo Específico 
+ 
 

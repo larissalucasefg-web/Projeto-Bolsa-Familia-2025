@@ -6,15 +6,13 @@ def iniciar_spark():
         .config("spark.driver.memory", "8g") \
         .config("spark.executor.memory", "8g") \
         .config("spark.sql.shuffle.partitions", "50") \
-        .getOrCreate()
+        .getOrCreate() 
 
-
-def ler_dados(spark, caminho_csv):
+def carregar_dataframe(spark, caminho_csv="dados/NovoBolsaFamilia25.csv"):
     df = spark.read \
         .option("header", True) \
         .option("inferSchema", True) \
         .option("sep", ";") \
         .option("encoding", "ISO-8859-1") \
-        .csv(caminho_csv)
-    
+        .csv(caminho_csv) 
     return df

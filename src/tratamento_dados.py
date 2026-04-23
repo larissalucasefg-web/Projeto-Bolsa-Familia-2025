@@ -1,6 +1,7 @@
-from pyspark.sql.functions import col, regexp_replace, substring, to_date, concat, lit
+from pyspark.sql.functions import col, regexp_replace, substring, concat, lit, to_date
 
-def padronizar_colunas(df):
+def tratar_dados(df):
+    # Padronização de colunas
     colunas_padrao = {
         "MÊS COMPETÊNCIA": "data_competencia",
         "MÊS REFERÊNCIA": "data_referencia",
@@ -11,15 +12,12 @@ def padronizar_colunas(df):
         "NIS FAVORECIDO": "nis_favorecido",
         "NOME FAVORECIDO": "nome_favorecido",
         "VALOR PARCELA": "valor_parcela"
-    }
+    } 
 
     for antiga, nova in colunas_padrao.items():
-        df = df.withColumnRenamed(antiga, nova)
+        df = df.withColumnRenamed(antiga, nova) 
 
-    return df
-
-
-def tratar_dados(df):
+    # Tratamento de tipos e limpeza
     df_tratado = (
         df
         .dropna()
@@ -40,6 +38,6 @@ def tratar_dados(df):
         )
         .withColumn("ano_competencia", substring(col("data_competencia"), 1, 4))
         .withColumn("mes_competencia", substring(col("data_competencia"), 5, 2))
-    )
-
+    ) 
+    
     return df_tratado

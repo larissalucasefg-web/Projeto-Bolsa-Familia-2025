@@ -25,20 +25,16 @@ O foco principal é a **comparação entre os cenários de 2021 e 2025**, mensur
 
 📦 BOLSA FAMILIA 2025\
 ├── 📂 dados\
-│   ├── 📄 BolsaFamilia21.csv\
 │   └── 📄 NovoBolsaFamilia25.csv\
 ├── 📂 notebooks\
 │   ├── 📄 analise_exploratoria.ipynb\
-│   ├── 🖼️ evolucao_pagamentos.png\
+│   ├── 🖼️ comparativo_2021X2025.png\
 │   ├── 🖼️ salto_orcamentario.png\
 │   └── 🖼️ top_ufs_bolsa_familia.png\
 ├── 📂 src\
-│   ├── 📂 __pycache__\
 │   ├── 📄 analises.py\
 │   ├── 📄 graficos.py\
 │   ├── 📄 leitura_dados.py\
-│   ├── 📄 main.py\
-│   ├── 📄 processamento.py\
 │   └── 📄 tratamento_dados.py\
 ├── 📂 venv\
 ├── 📄 .gitignore\
